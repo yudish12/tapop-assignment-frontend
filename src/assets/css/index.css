@@ -326,8 +326,9 @@ ul {
 }
 .postsImg {
   display: flex;
-  width: 250px;
+  width: 100%;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 .post-img {
   flex-grow: 1;

@@ -15,10 +15,12 @@ const Wrapper = styled.section`
   }
   .user-info {
     display: grid;
-    justifycontent: center;
-    place-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   }
+
   .user-info h3 {
     overflow: hidden;
     width: 300px;
@@ -30,8 +32,21 @@ const Wrapper = styled.section`
     font-size: 1.5rem;
     padding: 0.5rem;
   }
+
+  .name {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .email {
+    grid-area: 1 / 4 / 2 / 5;
+  }
+  .phoneNo {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  .desc {
+    grid-area: 3 / 3 / 4 / 4;
+  }
   .btn-block {
-    padding: 0 2rem;
+    grid-area: 2 / 4 / 3 / 5;
   }
   .btn {
     cursor: pointer;

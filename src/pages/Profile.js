@@ -92,14 +92,15 @@ const Profile = ({ loading, setLoading }) => {
           <ImageFromBuffer setLoading={setLoading} />
         </div>
         <div className="user-info">
-          <h3>{userState?.data?.name}</h3>
-          <h3>{userState?.data?.email}</h3>
-          <h3>{userState?.data?.phoneNo}</h3>
-        </div>
-        <div className="btn-block">
-          <button onClick={handleLogout} className="btn">
-            Logout
-          </button>
+          <h3 className="name">{userState?.data?.name}</h3>
+          <h3 className="email">{userState?.data?.email}</h3>
+          <h3 className="phoneNo">{userState?.data?.phoneNo}</h3>
+          <h3 className="desc">Description Box</h3>
+          <div className="btn-block">
+            <button onClick={handleLogout} className="btn">
+              Logout
+            </button>
+          </div>
         </div>
       </section>
       <section className="posts">

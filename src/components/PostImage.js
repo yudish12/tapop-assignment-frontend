@@ -17,7 +17,7 @@ const PostImage = ({ picture }) => {
   return (
     <img
       className="post-img"
-      style={{ height: "120px", width: "120px" }}
+      style={{ height: "320px", width: "40%", border: "2px solid black" }}
       src={imageSrc}
       alt="post pic"
     />
